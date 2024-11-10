@@ -3,14 +3,14 @@
 ##########
 # nench.sh ("new bench.sh")
 # =========================
-# current version at https://github.com/n-st/nench
+# current version at https://github.com/zerosuxx/nench
 # - loosely based on the established freevps.us/bench.sh
 # - includes CPU and ioping measurements
 # - reduced number of speedtests (9 x 100 MB), while retaining useful European
 #   and North American POPs
 # - runs IPv6 speedtest by default (if the server has IPv6 connectivity)
-# Run using `curl -s bench.wget.racing | bash`
-# or `wget -qO- bench.wget.racing | bash`
+# Run using `curl -s vpsbench.zer0.hu | bash`
+# or `wget -qO- vpsbench.zer0.hu | bash`
 # - list of possibly required packages: curl,gawk,coreutils,util-linux,procps,ioping
 ##########
 
@@ -77,7 +77,7 @@ dd_benchmark()
 {
     # returns IO speed in B/s
 
-    # Temporarily override locale to deal with non-standard decimal separators
+    # Temporarily override locale to deal with with non-standard decimal separators
     # (e.g. "," instead of ".").
     # The awk script assumes bytes/second if the suffix is !~ [TGMK]B. Call me
     # if your storage system does more than terabytes per second; I'll want to
