@@ -9,8 +9,8 @@
 # - reduced number of speedtests (9 x 100 MB), while retaining useful European
 #   and North American POPs
 # - runs IPv6 speedtest by default (if the server has IPv6 connectivity)
-# Run using `curl -s vpsbench.zer0.hu | bash`
-# or `wget -qO- vpsbench.zer0.hu | bash`
+# Run using `curl -s https://vpsbench.zer0.hu | bash`
+# or `wget -qO- https://vpsbench.zer0.hu | bash`
 # - list of possibly required packages: curl,gawk,coreutils,util-linux,procps,ioping
 ##########
 
@@ -127,7 +127,7 @@ then
 fi
 
 printf '%s\n' '-------------------------------------------------'
-printf ' nench.sh v2019.07.20 -- https://git.io/nench.sh\n'
+printf ' nench.sh v2019.07.20 -- https://https://vpsbench.zer0.hu/nench.sh\n'
 date -u '+ benchmark timestamp:    %F %T UTC'
 printf '%s\n' '-------------------------------------------------'
 
@@ -135,7 +135,7 @@ printf '\n'
 
 if ! command_exists ioping
 then
-    curl -s --max-time 10 -o ioping.static http://wget.racing/ioping.static
+    curl -s --max-time 10 -o ioping.static https://vpsbench.zer0.hu/ioping.static
     chmod +x ioping.static
     ioping_cmd="./ioping.static"
 else
