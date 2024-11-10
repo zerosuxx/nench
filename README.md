@@ -44,11 +44,11 @@ Usage example
 -------------
 
 ```
-(curl -s vpsbench.zer0.hu | bash; curl -s vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
+(curl -s https://vpsbench.zer0.hu | bash; curl -s https://vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
 ```
 
 ```
-(wget -qO- vpsbench.zer0.hu | bash; wget -qO- vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
+(wget -qO- https://vpsbench.zer0.hu | bash; wget -qO- https://vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
 ```
 
 Example output
