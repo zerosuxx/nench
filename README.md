@@ -1,9 +1,9 @@
 nench.sh ("new bench.sh")
 =========================
 
-Current version always available at https://github.com/n-st/nench
+Current version always available at https://github.com/zerosuxx/nench
 
-IPv4- and v6-enabled download at http://wget.racing/nench.sh
+IPv4- and v6-enabled download at https://vpsbench.zer0.hu
 
 - loosely based on the established freevps.us/bench.sh
 - includes CPU and ioping measurements
@@ -44,11 +44,11 @@ Usage example
 -------------
 
 ```
-(curl -s wget.racing/nench.sh | bash; curl -s wget.racing/nench.sh | bash) 2>&1 | tee nench.log
+(curl -s vpsbench.zer0.hu | bash; curl -s vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
 ```
 
 ```
-(wget -qO- wget.racing/nench.sh | bash; wget -qO- wget.racing/nench.sh | bash) 2>&1 | tee nench.log
+(wget -qO- vpsbench.zer0.hu | bash; wget -qO- vpsbench.zer0.hu | bash) 2>&1 | tee nench.log
 ```
 
 Example output
@@ -58,7 +58,7 @@ Output from a VPS hosted with Vultr in Frankfurt:
 
 ```
 -------------------------------------------------
- nench.sh v2017.05.08 -- https://git.io/nench.sh
+ nench.sh v2017.05.08 -- https://vpsbench.zer0.hu
  benchmark timestamp:    2017-05-08 20:36:54 UTC
 -------------------------------------------------
 
